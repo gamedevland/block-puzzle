@@ -1,0 +1,454 @@
+{
+  "root": {
+    "type": "Container",
+    "children": {
+      "score": {
+        "type": "Text",
+        "props": {
+          "anchor": 0.5,
+          "text": "0",
+          "style": {
+            "fontFamily": "Rubik",
+            "fontSize": 64,
+            "fontWeight": "700",
+            "fill": "#ffffff",
+            "stroke": {
+              "color": "#143482",
+              "width": 8
+            }
+          }
+        },
+        "components": {
+          "responsiveLayout": {
+            "type": "ResponsiveLayoutComponent",
+            "data": {
+              "area": {
+                "padding": {
+                  "top": 20,
+                  "right": 20,
+                  "bottom": 20,
+                  "left": 20
+                }
+              },
+              "scale": {
+                "mode": "width",
+                "screenWidth": 0.15,
+                "min": 0.55,
+                "max": 1
+              },
+              "position": {
+                "y": "top"
+              },
+              "orientation": {
+                "land": {
+                  "scale": {
+                    "screenWidth": 0.08,
+                    "max": 0.72
+                  }
+                }
+              }
+            }
+          },
+          "score": {
+            "type": "BlockPuzzleScoreComponent",
+            "data": {
+              "popScale": 1.18,
+              "popDuration": 0.2
+            }
+          }
+        }
+      },
+      "gameplay": {
+        "type": "Container",
+        "components": {
+          "responsiveLayout": {
+            "type": "ResponsiveLayoutComponent",
+            "data": {
+              "area": {
+                "padding": {
+                  "top": 16,
+                  "right": 16,
+                  "bottom": 16,
+                  "left": 16
+                }
+              },
+              "scale": {
+                "mode": "contain",
+                "min": 0.45,
+                "max": 1.08
+              }
+            }
+          },
+          "compositionLayout": {
+            "type": "BlockPuzzleLayoutComponent",
+            "data": {}
+          }
+        },
+        "children": {
+          "bounds": {
+            "type": "Graphics",
+            "props": {
+              "width": 1,
+              "height": 1,
+              "color": "#ffffff",
+              "alpha": 0
+            }
+          },
+          "board": {
+            "type": "Container",
+            "components": {
+              "board": {
+                "type": "BlockPuzzleBoardComponent",
+                "data": {
+                  "cellPrefab": "json/prefabs/game/board-cell.json",
+                  "tilePrefab": "json/prefabs/game/block-cell.json",
+                  "previewAlpha": 0.42,
+                  "linePreviewAlpha": 0.82,
+                  "linePreviewTintAmount": 0.55,
+                  "linePreviewPulseScale": 1.055,
+                  "linePreviewPulseDuration": 0.16,
+                  "placementPopScale": 1.16,
+                  "placementPopDuration": 0.16,
+                  "clearDuration": 0.24
+                }
+              }
+            },
+            "children": {
+              "bounds": {
+                "type": "Graphics",
+                "props": {
+                  "width": 1,
+                  "height": 1,
+                  "color": "#ffffff",
+                  "alpha": 0
+                }
+              },
+              "grid": {
+                "type": "Container",
+                "props": {
+                  "zIndex": 0
+                }
+              },
+              "tiles": {
+                "type": "Container",
+                "props": {
+                  "zIndex": 1
+                }
+              },
+              "preview": {
+                "type": "Container",
+                "props": {
+                  "zIndex": 2
+                }
+              },
+              "effects": {
+                "type": "Container",
+                "props": {
+                  "zIndex": 3
+                },
+                "components": {
+                  "effects": {
+                    "type": "BlockPuzzleBoardEffectsComponent",
+                    "data": {
+                      "actionId": "lineClearBurst"
+                    }
+                  }
+                },
+                "actions": {
+                  "lineClearBurst": {
+                    "type": "PlayParticlesAction",
+                    "data": {
+                      "presetAssetId": "json/configs/scenes/game/line-clear-particles.json",
+                      "space": "local"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "slots": {
+            "type": "Container",
+            "props": {},
+            "components": {
+              "slots": {
+                "type": "BlockPuzzleSlotsComponent",
+                "data": {
+                  "tilePrefab": "json/prefabs/game/block-cell.json",
+                  "spawnDuration": 0.2,
+                  "spawnStagger": 0.04,
+                  "draggedAlpha": 0.24,
+                  "draggedScale": 0.92,
+                  "restoreDuration": 0.14
+                }
+              }
+            },
+            "children": {
+              "bounds": {
+                "type": "Graphics",
+                "props": {
+                  "width": 1,
+                  "height": 1,
+                  "color": "#ffffff",
+                  "alpha": 0
+                }
+              },
+              "slot-0": {
+                "type": "Container",
+                "props": {},
+                "children": {
+                  "hitArea": {
+                    "type": "Graphics",
+                    "props": {
+                      "x": 0,
+                      "y": 0,
+                      "width": 1,
+                      "height": 1,
+                      "color": "#ffffff",
+                      "alpha": 0
+                    }
+                  }
+                }
+              },
+              "slot-1": {
+                "type": "Container",
+                "props": {},
+                "children": {
+                  "hitArea": {
+                    "type": "Graphics",
+                    "props": {
+                      "x": 0,
+                      "y": 0,
+                      "width": 1,
+                      "height": 1,
+                      "color": "#ffffff",
+                      "alpha": 0
+                    }
+                  }
+                }
+              },
+              "slot-2": {
+                "type": "Container",
+                "props": {},
+                "children": {
+                  "hitArea": {
+                    "type": "Graphics",
+                    "props": {
+                      "x": 0,
+                      "y": 0,
+                      "width": 1,
+                      "height": 1,
+                      "color": "#ffffff",
+                      "alpha": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "drag": {
+        "type": "Container",
+        "props": {
+          "zIndex": 100
+        }
+      },
+      "resultPopup": {
+        "type": "Container",
+        "props": {
+          "visible": false,
+          "zIndex": 230
+        },
+        "components": {
+          "popup": {
+            "type": "BlockPuzzleResultPopupComponent",
+            "data": {
+              "restartEventType": "BLOCK_PUZZLE_RESTART_REQUESTED",
+              "blockerDuration": 0.28,
+              "panelDuration": 0.38
+            }
+          }
+        },
+        "children": {
+          "blocker": {
+            "type": "Graphics",
+            "props": {
+              "width": 960,
+              "height": 540,
+              "color": "#07183d",
+              "alpha": 0.76
+            },
+            "components": {
+              "responsiveLayout": {
+                "type": "ResponsiveLayoutComponent",
+                "data": {
+                  "resize": "stretch"
+                }
+              }
+            }
+          },
+          "panel": {
+            "type": "Container",
+            "components": {
+              "responsiveLayout": {
+                "type": "ResponsiveLayoutComponent",
+                "data": {
+                  "area": {
+                    "width": "90%",
+                    "height": "78%",
+                    "centerX": 0,
+                    "centerY": 0
+                  },
+                  "scale": {
+                    "mode": "contain",
+                    "max": 1
+                  },
+                  "position": "center",
+                  "orientation": {
+                    "port": {
+                      "scale": {
+                        "max": 1.15
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "children": {
+              "bounds": {
+                "type": "Graphics",
+                "props": {
+                  "x": -210,
+                  "y": -180,
+                  "width": 420,
+                  "height": 360,
+                  "color": "#ffffff",
+                  "alpha": 0
+                }
+              },
+              "title": {
+                "type": "Text",
+                "props": {
+                  "text": "GAME OVER",
+                  "x": 0,
+                  "y": -112,
+                  "anchor": 0.5,
+                  "style": {
+                    "fontFamily": "Rubik",
+                    "fontSize": 54,
+                    "fontWeight": "700",
+                    "fill": "#ffffff"
+                  }
+                }
+              },
+              "scoreLabel": {
+                "type": "Text",
+                "props": {
+                  "text": "SCORE",
+                  "x": -92,
+                  "y": -34,
+                  "anchor": 0.5,
+                  "style": {
+                    "fontFamily": "Rubik",
+                    "fontSize": 28,
+                    "fontWeight": "700",
+                    "fill": "#ffffff"
+                  }
+                }
+              },
+              "scoreValue": {
+                "type": "Text",
+                "props": {
+                  "text": "0",
+                  "x": 92,
+                  "y": -34,
+                  "anchor": 0.5,
+                  "style": {
+                    "fontFamily": "Rubik",
+                    "fontSize": 32,
+                    "fontWeight": "700",
+                    "fill": "#ffffff"
+                  }
+                }
+              },
+              "bestLabel": {
+                "type": "Text",
+                "props": {
+                  "text": "BEST SCORE",
+                  "x": -72,
+                  "y": 22,
+                  "anchor": 0.5,
+                  "style": {
+                    "fontFamily": "Rubik",
+                    "fontSize": 28,
+                    "fontWeight": "700",
+                    "fill": "#ffffff"
+                  }
+                }
+              },
+              "bestValue": {
+                "type": "Text",
+                "props": {
+                  "text": "0",
+                  "x": 112,
+                  "y": 22,
+                  "anchor": 0.5,
+                  "style": {
+                    "fontFamily": "Rubik",
+                    "fontSize": 32,
+                    "fontWeight": "700",
+                    "fill": "#ffffff"
+                  }
+                }
+              },
+              "restartButton": {
+                "type": "Container",
+                "props": {
+                  "x": 0,
+                  "y": 112
+                },
+                "children": {
+                  "background": {
+                    "type": "Sprite",
+                    "props": {
+                      "asset": "images/btn.png",
+                      "anchor": 0.5,
+                      "scale": 0.7
+                    }
+                  },
+                  "label": {
+                    "type": "Text",
+                    "props": {
+                      "text": "RESTART",
+                      "anchor": 0.5,
+                      "style": {
+                        "fontFamily": "Rubik",
+                        "fontSize": 28,
+                        "fontWeight": "700",
+                        "fill": "#ffffff"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "drag": {
+        "type": "BlockPuzzleDragComponent",
+        "data": {
+          "responsiveRootPath": "gameplay",
+          "boardPath": "gameplay.board",
+          "slotsPath": "gameplay.slots",
+          "dragLayerPath": "drag",
+          "tilePrefab": "json/prefabs/game/block-cell.json",
+          "snapDuration": 0.12,
+          "returnDuration": 0.18
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "useUnknownInCatchVariables": true,
+    "noImplicitOverride": true,
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@game/*": ["game/*"],
+      "@json/*": ["game/json/*"],
+      "@common/*": ["game/src/common/*"],
+      "@modules/*": ["modules/*"]
+    },
+    "types": ["node", "vite/client"]
+  },
+  "include": ["game", "modules", "scripts/**/*.ts", "vite.config.ts"],
+  "exclude": ["dist", "node_modules"]
+}

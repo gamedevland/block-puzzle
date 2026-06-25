@@ -1,0 +1,25 @@
+{
+  "type": "Container",
+  "children": {
+    "bounds": {
+      "type": "Graphics",
+      "props": {
+        "x": -24,
+        "y": -24,
+        "width": 48,
+        "height": 48,
+        "color": "#ffffff",
+        "alpha": 0
+      }
+    },
+    "visual": {
+      "type": "Sprite",
+      "props": {
+        "asset": "images/block.png",
+        "anchor": 0.5,
+        "width": 48,
+        "height": 48
+      }
+    }
+  }
+}

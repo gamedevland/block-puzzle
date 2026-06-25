@@ -1,0 +1,17 @@
+{
+  "board": {
+    "cellSize": 48,
+    "gap": 3
+  },
+  "slots": {
+    "cellSize": 24,
+    "gap": 1.5,
+    "topGap": 19,
+    "height": 100,
+    "hitPaddingX": 9.5,
+    "hitPaddingY": 5
+  },
+  "composition": {
+    "topReserve": 120
+  }
+}

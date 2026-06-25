@@ -1,0 +1,102 @@
+{
+  "shapes": [
+    {
+      "id": "single",
+      "color": 55807,
+      "cells": [
+        { "row": 0, "column": 0 }
+      ]
+    },
+    {
+      "id": "line-2-horizontal",
+      "color": 3073357,
+      "cells": [
+        { "row": 0, "column": 0 },
+        { "row": 0, "column": 1 }
+      ]
+    },
+    {
+      "id": "line-3-vertical",
+      "color": 12078591,
+      "cells": [
+        { "row": 0, "column": 0 },
+        { "row": 1, "column": 0 },
+        { "row": 2, "column": 0 }
+      ]
+    },
+    {
+      "id": "line-4-horizontal",
+      "color": 16751135,
+      "cells": [
+        { "row": 0, "column": 0 },
+        { "row": 0, "column": 1 },
+        { "row": 0, "column": 2 },
+        { "row": 0, "column": 3 }
+      ]
+    },
+    {
+      "id": "square-2",
+      "color": 16726843,
+      "cells": [
+        { "row": 0, "column": 0 },
+        { "row": 0, "column": 1 },
+        { "row": 1, "column": 0 },
+        { "row": 1, "column": 1 }
+      ]
+    },
+    {
+      "id": "square-3",
+      "color": 16765486,
+      "cells": [
+        { "row": 0, "column": 0 },
+        { "row": 0, "column": 1 },
+        { "row": 0, "column": 2 },
+        { "row": 1, "column": 0 },
+        { "row": 1, "column": 1 },
+        { "row": 1, "column": 2 },
+        { "row": 2, "column": 0 },
+        { "row": 2, "column": 1 },
+        { "row": 2, "column": 2 }
+      ]
+    },
+    {
+      "id": "l-4",
+      "color": 55807,
+      "cells": [
+        { "row": 0, "column": 0 },
+        { "row": 1, "column": 0 },
+        { "row": 2, "column": 0 },
+        { "row": 2, "column": 1 }
+      ]
+    },
+    {
+      "id": "t-4",
+      "color": 16765486,
+      "cells": [
+        { "row": 0, "column": 0 },
+        { "row": 0, "column": 1 },
+        { "row": 0, "column": 2 },
+        { "row": 1, "column": 1 }
+      ]
+    },
+    {
+      "id": "zigzag-4",
+      "color": 3073357,
+      "cells": [
+        { "row": 0, "column": 1 },
+        { "row": 0, "column": 2 },
+        { "row": 1, "column": 0 },
+        { "row": 1, "column": 1 }
+      ]
+    },
+    {
+      "id": "corner-3",
+      "color": 12078591,
+      "cells": [
+        { "row": 0, "column": 0 },
+        { "row": 1, "column": 0 },
+        { "row": 1, "column": 1 }
+      ]
+    }
+  ]
+}

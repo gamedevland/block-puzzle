@@ -1,0 +1,98 @@
+{
+  "lifetime": {
+    "min": 0.35,
+    "max": 0.65
+  },
+  "frequency": 0.001,
+  "pos": {
+    "x": 0,
+    "y": 0
+  },
+  "particlesPerWave": 12,
+  "emitterLifetime": 0.01,
+  "maxParticles": 12,
+  "addAtBack": false,
+  "behaviors": [
+    {
+      "type": "alpha",
+      "config": {
+        "alpha": {
+          "list": [
+            {
+              "value": 1,
+              "time": 0
+            },
+            {
+              "value": 0,
+              "time": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "config": {
+        "scale": {
+          "list": [
+            {
+              "value": 0.32,
+              "time": 0
+            },
+            {
+              "value": 0.04,
+              "time": 1
+            }
+          ],
+          "isStepped": false
+        },
+        "minMult": 0.75
+      }
+    },
+    {
+      "type": "color",
+      "config": {
+        "color": {
+          "list": [
+            {
+              "value": "ffffff",
+              "time": 0
+            },
+            {
+              "value": "8de7ff",
+              "time": 1
+            }
+          ],
+          "isStepped": false
+        }
+      }
+    },
+    {
+      "type": "moveSpeedStatic",
+      "config": {
+        "min": 100,
+        "max": 180
+      }
+    },
+    {
+      "type": "rotation",
+      "config": {
+        "minStart": 0,
+        "maxStart": 360,
+        "minSpeed": -220,
+        "maxSpeed": 220,
+        "accel": 0
+      }
+    },
+    {
+      "type": "spawnPoint",
+      "config": {}
+    },
+    {
+      "type": "textureSingle",
+      "config": {
+        "texture": "images/fx/sparkle-2.png"
+      }
+    }
+  ]
+}

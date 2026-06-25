@@ -1,0 +1,9 @@
+{
+  "channel.music": 1,
+  "channel.sfx": 1,
+  "sounds/music.mp3": 0.2,
+  "sounds/sfx-placed.mp3": 0.75,
+  "sounds/sfx-selected.mp3": 0.75,
+  "sounds/sfx-success.mp3": 0.25,
+  "sounds/sfx-fail.mp3": 0.75
+}

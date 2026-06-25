@@ -1,0 +1,40 @@
+{
+  "name": "block-puzzle",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run dev:web",
+    "dev:web": "VITE_PLATFORM=web vite",
+    "build": "npm run build:web",
+    "build:web": "VITE_PLATFORM=web vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.tsx,.js,.json --max-warnings=0"
+  },
+  "dependencies": {
+    "@gamedevland/engine": "0.0.2",
+    "@gamedevland/vite": "0.0.1",
+    "@spd789562/particle-emitter": "^1.0.2",
+    "gsap": "^3.12.5",
+    "howler": "^2.2.4",
+    "matter-js": "^0.20.0",
+    "pixi.js": "^8.16.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "@types/howler": "^2.2.12",
+    "@types/matter-js": "^0.20.2",
+    "@types/node": "^24.7.0",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsonc": "^3.1.2",
+    "eslint-plugin-unused-imports": "^4.2.0",
+    "jsonc-eslint-parser": "^3.1.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.0",
+    "vite": "^8.0.16"
+  }
+}
