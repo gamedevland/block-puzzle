@@ -13,8 +13,8 @@
     "lint": "eslint . --ext .ts,.tsx,.js,.json --max-warnings=0"
   },
   "dependencies": {
-    "@gamedevland/engine": "0.0.3",
-    "@gamedevland/vite": "0.0.2",
+    "@gamedevland/engine": "0.0.4",
+    "@gamedevland/vite": "0.0.3",
     "@spd789562/particle-emitter": "^1.0.2",
     "gsap": "^3.12.5",
     "howler": "^2.2.4",
